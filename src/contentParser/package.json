@@ -1,0 +1,21 @@
+{
+  "name": "alexa-content-parser",
+  "version": "0.1.0",
+  "private": true,
+  "homepage":"./",
+  "dependencies": {
+    "antd": "^3.4.4",
+    "axios": "^0.18.0",
+    "gojs": "^1.8.28",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "storm-react-diagrams": "^5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
