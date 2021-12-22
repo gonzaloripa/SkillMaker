@@ -1,0 +1,21 @@
+{
+  "name": "My Awesome page_action Extension",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts":[
+    {
+      "js":["DOMPresentationUtils.js", "content.js", "deep-diff.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background" : {
+    "scripts" : ["DOMPresentationUtils.js", "background.js", "deep-diff.min.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "manifest_version":2,
+  "web_accessible_resources": ["*.jpg", "/contentParser/index.html", "/contentAdmin/index.html"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline' 'sha256-18j9+nErtuKtcSwKvHjJxqQJK1kCjNV0fFqZIbKBDDY='"
+}
